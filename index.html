@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">My To-Do App</h1>
+      <div class="header__add-task">
+        <input
+          class="add-task-input interactive-text"
+          type="add-task__text"
+          placeholder="Enter your task"
+        />
+        <select
+          class="add-task__priority interactive-button"
+          name="task-priority"
+        >
+          <option class="test" value="priority-1">Priority 1</option>
+          <option value="priority-2">Priority 2</option>
+          <option value="priority-3">Priority 3</option>
+          <option value="priority-4">Priority 4</option>
+        </select>
+        <input
+          class="add-task__button interactive-button"
+          type="submit"
+          value="Add Task"
+        />
+      </div>
+    </header>
+    <div class="container">
+      <section class="container__content">
+        <ul class="content__todo-list">
+          <li class="todo-list__todo-item">
+            <div class="todo-item__info">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Deleniti, laborum. Eveniet, odio.
+            </div>
+            <div class="todo-item__edit">
+              <button class="edit__button edit__button--check">Complate</button>
+              <button class="edit__button edit__button--delete">Delete</button>
+            </div>
+          </li>
+          <li class="todo-list__todo-item">
+            <div class="todo-item__info">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Deleniti, laborum. Eveniet, odio.
+            </div>
+            <div class="todo-item__edit">
+              <button class="edit__button edit__button--check">Complate</button>
+              <button class="edit__button edit__button--delete">Delete</button>
+            </div>
+          </li>
+          <li class="todo-list__todo-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            dignissimos asperiores cumque. Consequatur recusandae itaque numquam
+            consectetur accusantium quisquam explicabo.
+            <div class="todo-item__edit">
+              <button class="edit__button edit__button--check">Complate</button>
+              <button class="edit__button edit__button--delete">Delete</button>
+            </div>
+          </li>
+
+          <li class="todo-list__todo-item">
+            <div class="todo-item__info">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Deleniti, laborum. Eveniet, odio.
+            </div>
+            <div class="todo-item__edit">
+              <button class="edit__button edit__button--check">Complate</button>
+              <button class="edit__button edit__button--delete">Delete</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

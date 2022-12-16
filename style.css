@@ -1,0 +1,131 @@
+/* ||Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --white-color: #ffffff;
+  --topbar-background-color: #e0d145;
+  --content-background-color: #ebeab5;
+  --topbar-text-color: #ebeab5;
+  --button-background-color: #c7e1eb;
+  --button-background-hover-color: #a6ebfd;
+}
+/* || General Styles */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--content-background-color);
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+select {
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  border: var(--content-background-color) solid 0.3rem;
+  background-color: var(--button-background-color);
+  outline: none;
+}
+
+input:focus {
+  background-color: var(--button-background-hover-color);
+}
+
+.interactive-text:hover {
+  background-color: var(--button-background-hover-color);
+}
+
+.interactive-button:hover {
+  background-color: var(--button-background-hover-color);
+  cursor: pointer;
+}
+
+/* || Layout Styles */
+.header {
+  padding: 2rem;
+  background-color: var(--topbar-background-color);
+  color: var(--topbar-text-color);
+}
+
+.header__title {
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.header__add-task {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.add-task-input {
+  flex: 4;
+}
+
+.add-task__priority {
+  flex: 1;
+}
+
+.add-task__button {
+  flex: 1;
+}
+
+.container__content {
+  margin: 5rem 7rem;
+}
+
+.content__todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.todo-list__todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--button-background-color);
+  padding: 1rem;
+  border: #e0d145 0.4rem solid;
+  border-radius: 20rem;
+  gap: 1rem;
+}
+
+.todo-item__edit {
+  display: flex;
+  gap: 1rem;
+}
+
+.edit__button {
+  border: 0.3rem solid var(--topbar-background-color);
+  border-radius: 20rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.edit__button:hover {
+  opacity: 1;
+}
+
+.edit__button--check {
+  background-color: green;
+}
+
+.edit__button--delete {
+  background-color: red;
+}
+
+/* || Media Querries */
