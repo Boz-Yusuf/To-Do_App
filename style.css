@@ -24,6 +24,7 @@ html {
 body {
   height: 100vh;
   background-color: var(--content-background-color);
+  font-size: 1.3rem;
 }
 
 ul {
@@ -32,14 +33,19 @@ ul {
 
 input,
 select {
+  font-size: 1.5rem;
+  color: #444;
   padding: 0.8rem 1.5rem;
   border-radius: 1rem;
-  border: var(--content-background-color) solid 0.3rem;
-  background-color: var(--button-background-color);
   outline: none;
+  border: var(--content-background-color) solid 0.3rem;
 }
 
-input:focus {
+.interactive-text {
+  background-color: var(--button-background-color);
+}
+
+.interactive-text:focus {
   background-color: var(--button-background-hover-color);
 }
 
@@ -47,7 +53,16 @@ input:focus {
   background-color: var(--button-background-hover-color);
 }
 
+.interactive-button--add-task {
+  background-color: orangered;
+}
+
+.interactive-button--select-priority {
+  background-color: var(--button-background-color);
+}
+
 .interactive-button:hover {
+  font-weight: bold;
   background-color: var(--button-background-hover-color);
   cursor: pointer;
 }
@@ -83,7 +98,7 @@ input:focus {
 }
 
 .container__content {
-  margin: 5rem 7rem;
+  margin: 5rem 2rem;
 }
 
 .content__todo-list {
@@ -97,8 +112,8 @@ input:focus {
   justify-content: space-between;
   align-items: center;
   background-color: var(--button-background-color);
-  padding: 1rem;
-  border: #e0d145 0.4rem solid;
+  padding: 1rem 2rem;
+  border: var(--topbar-background-color) 0.4rem solid;
   border-radius: 20rem;
   gap: 1rem;
 }
@@ -109,9 +124,12 @@ input:focus {
 }
 
 .edit__button {
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+  color: var(--button-background-color);
   border: 0.3rem solid var(--topbar-background-color);
   border-radius: 20rem;
-  padding: 0.5rem;
+  padding: 0.6rem;
   cursor: pointer;
   opacity: 0.7;
 }
@@ -131,21 +149,7 @@ input:focus {
 /* || Media Querries */
 
 @media (max-width: 800px) {
-  .container__content {
-    margin: 4rem 5rem;
-  }
-
   .header__add-task {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 400px) {
-  .container__content {
-    margin: 3rem;
-  }
-
-  .todo-list__todo-item {
     flex-direction: column;
   }
 }
