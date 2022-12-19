@@ -153,3 +153,10 @@ select {
     flex-direction: column;
   }
 }
+
+@media (max-width: 500px) {
+  .todo-list__todo-item {
+    flex-direction: column;
+    flex: 1;
+  }
+}
