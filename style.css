@@ -146,6 +146,12 @@ select {
   background-color: red;
 }
 
+.test {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+}
+
 /* || Media Querries */
 
 @media (max-width: 800px) {
@@ -157,6 +163,5 @@ select {
 @media (max-width: 500px) {
   .todo-list__todo-item {
     flex-direction: column;
-    flex: 1;
   }
 }
